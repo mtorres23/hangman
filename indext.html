@@ -3,20 +3,32 @@
 <head>
 	<title>HangMan</title>
 	<meta charset="utf-8">
-	<link rel = "stylesheet" type="text/css" href="main.css"
-	<script type="text/javascript" src="script.js"></script>
+	<link rel = "stylesheet" type="text/css" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
+	<script type="text/javascript" src="script.js"></script>
+	<script>window.onload = draw;</script>
 </head>
 <body>
 <header>
 	<h1>Hang Man</h1>
 	<h2>Cuisine's From Around The World</h2>
 	<p>Can you guess the different cuisine's from around the world</p>
-
 </header>
-<section> 
 
-<div id="buttons">
+<canvas id="hangman" width="300px" height="300px"></canvas>
+
+<div class="wrapper">
+    <div id="buttons2">
+    </div>  
+    <div id="hold">
+    </div>  
+    <div class="container">
+      <button id="hint">Guesses Left</button>
+      <button id="reset">New Game</button>
+    </div>
+</div>
+
+<div id="buttons1">
 	<button>A</button>
 	<button>B</button>
 	<button>C</button>
@@ -45,8 +57,8 @@
 	<button>Z</button>
 
 </div>
-	
-</section>
+
+<footer>Michael Torres☹</footer>
 
 </body>
 </html>

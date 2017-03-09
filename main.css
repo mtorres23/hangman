@@ -1,11 +1,58 @@
 h1, h2, p {
+	font-family: 'Cinzel Decorative', cursive;
+	color: white;
 	text-align: center;
 }
-h1, h2 {
-	font-family: 'Cinzel Decorative', cursive;
+
+h1 {
+	border: solid rgb(81, 190, 232);
 }
 
-#buttons {
-	margin: 80px;
-	padding: 135px;
+h2 {
+	border-bottom: solid rgb(81, 190, 232);
+	width: 75%;
+	margin: 0 10% 0 12%;
 }
+
+#buttons1 {
+	text-align: right;
+
+}
+
+body {
+	background: linear-gradient(black, white);
+}
+
+button {
+	color: rgb(55, 125, 158);
+	font-size: 15px;
+	border-radius: 4px;
+	border: 2px solid gray;
+}
+
+button:hover {
+	background-color: #4CAF50; /* green */
+    color: white;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
+}
+
+canvas{
+  border: rgb(153, 163, 176) solid 2px;
+}
+
+#buttons2 {
+	display: inline-block;
+}
+
+footer {
+	text-align: center;
+	color: rgb(55, 125, 158);
+}
+
+.wrapper {
+	text-align: left;
+	width: 760px;
+}
+
+
+
