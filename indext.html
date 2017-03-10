@@ -7,35 +7,43 @@
   <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
 </head>
 <body>
-<header>
   <div id ="container">
-    <div id="header">
+  <div id="header">
       <h1>Hangman game</h1>
       <h2>Cuisine's From Around The World</h2>
-      <p>Can you guess the different cuisine's from around the world</p>
+      <br>
+      <h3>Can you guess the different cuisine's from around the world</h3>
 
-      <p>"In order to start a new game, all you have to do is wait. This game automactically restarts whether you win or lose.From here on out, you will have six chances to guess the correct Cuisine from the provided letters. In failing to do so, you will lose.</p>
+      <p id="descript">"In order to start a new game, all you have to do is wait. This game automactically restarts whether you win or lose.From here on out, you will have nine chances to guess the correct Cuisine from the provided letters. In failing to do so, you will lose".</p>
         <br>
 
- <canvas id="hangman" width="300px" height="300px"></canvas>
+<img src="http://media.istockphoto.com/photos/hanging-noose-rope-on-black-background-picture-id173875479?k=6&m=173875479&s=170667a&w=0&h=0wZlA1UZj1sMhUnTnD2pIeph59JK61bJ3IqhSW0TYV4=" id="hangman"><br />
       
-      <p>
-        You Have <span id ="lives">9</span> Lives Left.
-        <br>
+<div id="wrap">
+  <div id="head"></div>
+  <div id="leye"></div>
+  <div id="reye"></div>
+  <div id="body"></div>
+  <div id="left arm"></div>
+  <div id="right arm"></div>
+  <div id="rleg"></div>
+  <div id="lleg"></div>
+
+  </div>
+
+      <h1 id ="WORD">_ _ _ _</h1>
+
+      <p id="livesLeft">
+        You Have <span id ="lives">9</span> Guesses Left.
+      <br>
         There are <span id="numLetters">0</span> Letters In This Word.
       </p>
-      <h1 id ="WORD">_ _ _ _</h1>
+
     </div>
 
-<div class="wrapper">
-    <div id="buttons2">
-    </div>  
-    <div id="hold">
-    </div>  
-    <div class="container">
-      <button id="hint">Guesses Left</button>
-      <button id="reset">New Game</button>
-    </div>
+<button onclick="myFunction()">Hints</button>
+
+<p id="motivation"></p>
 
 
     <div id ="letters">
@@ -69,7 +77,8 @@
 
   </div>
 
-<footer>Michael Torres☹ ☺︎ ☹</footer>
+
+<footer>By: Michael Torres☹ ☺︎ ☹</footer>
 
 <script type="text/javascript" src="jquery.min.js" ></script>
 <script type="text/javascript" src="script.js" ></script>
