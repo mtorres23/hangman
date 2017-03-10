@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HangMan</title>
-	<meta charset="utf-8">
-	<link rel = "stylesheet" type="text/css" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
-	<script type="text/javascript" src="script.js"></script>
-	<script>window.onload = draw;</script>
+  <title>Hangman</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
 </head>
 <body>
 <header>
-	<h1>Hang Man</h1>
-	<h2>Cuisine's From Around The World</h2>
-	<p>Can you guess the different cuisine's from around the world</p>
-</header>
+  <div id ="container">
+    <div id="header">
+      <h1>Hangman game</h1>
+      <h2>Cuisine's From Around The World</h2>
+      <p>Can you guess the different cuisine's from around the world</p>
 
-<canvas id="hangman" width="300px" height="300px"></canvas>
+      <p>"In order to start a new game, all you have to do is wait. This game automactically restarts whether you win or lose.From here on out, you will have six chances to guess the correct Cuisine from the provided letters. In failing to do so, you will lose.</p>
+        <br>
+
+ <canvas id="hangman" width="300px" height="300px"></canvas>
+      
+      <p>
+        You Have <span id ="lives">9</span> Lives Left.
+        <br>
+        There are <span id="numLetters">0</span> Letters In This Word.
+      </p>
+      <h1 id ="WORD">_ _ _ _</h1>
+    </div>
 
 <div class="wrapper">
     <div id="buttons2">
@@ -26,39 +36,42 @@
       <button id="hint">Guesses Left</button>
       <button id="reset">New Game</button>
     </div>
-</div>
 
-<div id="buttons1">
-	<button>A</button>
-	<button>B</button>
-	<button>C</button>
-	<button>D</button>
-	<button>E</button>
-	<button>F</button>
-	<button>G</button>
-	<button>H</button>
-	<button>I</button>
-	<button>J</button>
-	<button>K</button>
-	<button>L</button>
-	<button>M</button>
-	<button>N</button>
-	<button>O</button>
-	<button>P</button>
-	<button>Q</button>
-	<button>R</button>
-	<button>S</button>
-	<button>T</button>
-	<button>U</button>
-	<button>V</button>
-	<button>W</button>
-	<button>X</button>
-	<button>Y</button>
-	<button>Z</button>
 
-</div>
+    <div id ="letters">
+      <a id="a">A</a>
+      <a id="b">B</a>
+      <a id="c">C</a>
+      <a id="d">D</a>
+      <a id="e">E</a>
+      <a id="f">F</a>
+      <a id="g">G</a>
+      <a id="h">H</a>
+      <a id="i">I</a>
+      <a id="j">J</a>
+      <a id="k">K</a>
+      <a id="l">L</a>
+      <a id="m">M</a>
+      <a id="n">N</a>
+      <a id="o">O</a>
+      <a id="p">P</a>
+      <a id="q">Q</a>
+      <a id="r">R</a>
+      <a id="s">S</a>
+      <a id="t">T</a>
+      <a id="u">U</a>
+      <a id="v">V</a>
+      <a id="w">W</a>
+      <a id="x">X</a>
+      <a id="y">Y</a>
+      <a id="z">Z</a>
+    </div>
 
-<footer>Michael Torres☹</footer>
+  </div>
 
+<footer>Michael Torres☹ ☺︎ ☹</footer>
+
+<script type="text/javascript" src="jquery.min.js" ></script>
+<script type="text/javascript" src="script.js" ></script>
 </body>
 </html>
