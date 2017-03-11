@@ -1,5 +1,5 @@
-//var name =prompt("Whats your name?");
-//alert("Hello " + name + " , hope you're ready to play some hangman!");//
+var name =prompt("Whats your name?");
+alert("Hello " + name + " , hope you're ready to play some hangman!");//
 
 
 // Word Bank
